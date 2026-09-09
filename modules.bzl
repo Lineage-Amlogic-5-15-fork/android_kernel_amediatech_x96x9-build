@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 
-KVIM3_MODULES = [
+X96X9_MODULES = [
     # keep sorted
     "arch/arm64/crypto/sha1-ce.ko",
     "drivers/clk/clk-scmi.ko",
@@ -40,11 +40,9 @@ KVIM3_MODULES = [
     "drivers/net/mdio/mdio-mux.ko",
     "drivers/net/pcs/pcs_xpcs.ko",
     "drivers/regulator/gpio-regulator.ko",
-    "drivers/rtc/rtc-hym8563.ko",
     "fs/ntfs3/ntfs3.ko",
     "net/mac80211/mac80211.ko",
     "net/wireless/cfg80211.ko",
-    "sound/drivers/snd-aloop.ko",
 ]
 
 COMMON_DRIVERS_MODULES = [
@@ -73,7 +71,6 @@ COMMON_DRIVERS_MODULES = [
     "common_drivers/drivers/media/camera/amlogic-camera.ko",
     "common_drivers/drivers/memory_ext/aml_smmu.ko",
     "common_drivers/drivers/memory_ext/user_fault.ko",
-    "common_drivers/drivers/misc/khadas-mcu.ko",
     "common_drivers/drivers/net/ethernet/stmicro/stmmac/amlogic-phy-debug.ko",
     "common_drivers/drivers/net/ethernet/stmicro/stmmac/dwmac-dwc-qos-eth.ko",
     "common_drivers/drivers/net/ethernet/stmicro/stmmac/dwmac-meson.ko",
