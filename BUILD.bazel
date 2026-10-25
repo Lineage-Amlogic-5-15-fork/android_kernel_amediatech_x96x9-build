@@ -5,6 +5,7 @@ load("//vendor/amlogic/kernel:kernel_platform.bzl", "amlogic_kernel_platform")
 load("//vendor/amlogic/gpu-modules/bifrost:defs.bzl", "mali_bifrost_module")
 load("//vendor/amlogic/dhd-driver:defs.bzl", "bcmdhd_591_sdio_module")
 load("//vendor/amlogic/media-modules:defs.bzl", "media_modules_module")
+load("//vendor/amlogic/openvfd:defs.bzl", "openvfd_module")
 load(":modules.bzl", "COMMON_DRIVERS_MODULES", "GKI_MODULES_REMOVE", "X96X9_MODULES", "MODULES_OUT_REMOVE", "SYSTEM_DLKM_MODULES")
 
 package(
@@ -16,6 +17,8 @@ bcmdhd_591_sdio_module(name = "wlan_ap6356", kernel_build = ":x96x9")
 mali_bifrost_module(name = "gpu_bifrost", kernel_build = ":x96x9")
 
 media_modules_module(name = "media", kernel_build = ":x96x9")
+
+openvfd_module(name = "openvfd", kernel_build = ":x96x9")
 
 amlogic_kernel_platform(
     name = "x96x9",
@@ -32,6 +35,7 @@ amlogic_kernel_platform(
         ":wlan_ap6356",
         ":gpu_bifrost",
         ":media",
+        ":openvfd",
     ],
 )
 
