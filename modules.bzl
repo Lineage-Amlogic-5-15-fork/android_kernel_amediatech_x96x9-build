@@ -43,6 +43,7 @@ X96X9_MODULES = [
     "fs/ntfs3/ntfs3.ko",
     "net/mac80211/mac80211.ko",
     "net/wireless/cfg80211.ko",
+    "sound/drivers/snd-aloop.ko",
 ]
 
 COMMON_DRIVERS_MODULES = [
